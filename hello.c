@@ -12,7 +12,7 @@ int registro ()
     char sobrenome[40];
     char cargo[40];
 
-    printf("Digite o CPF a ser cadastrado: ");
+    printf("Digite o CPF a ser cadastrado no espaco em branco a seguir: ");
     scanf("%s", cpf);
 
     strcpy(arquivo, cpf); //responsavel por copiar os valores da string
