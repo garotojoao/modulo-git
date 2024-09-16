@@ -37,7 +37,7 @@ int registro ()
     fprintf(file,", \nSobrenome: ");
     fclose(file);
 
-    printf("Digite o Sobrenome A ser Cadastrado: ");
+    printf("Digite o Sobrenome a ser Cadastrado: ");
     scanf("%s", sobrenome);
 
     file = fopen(arquivo, "a");
@@ -124,6 +124,7 @@ int main ()
     printf ("\t2 - Consultar Nomes\n");
     printf ("\t3 - Deletar Nomes\n\n");
     printf ("\t4 - sair do sistema\n\n");
+    printf ("\t5 - Faca una doacao ao desenvolvedor\n\n");
     printf("Opção: ");//fim do menu
 
         scanf("%d" , &opcao );// escolha do usuario
@@ -145,6 +146,11 @@ int main ()
 
         case 4:
         printf("Obrigado por utilizar esse sistema!\n");
+        return 0;
+        break;
+
+        case 5:
+        printf("Obrigado, minha chave pix é 4002-8922 !\n");
         return 0;
         break;
 
