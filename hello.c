@@ -125,6 +125,7 @@ int main ()
     printf ("\t3 - Deletar Nomes\n\n");
     printf ("\t4 - sair do sistema\n\n");
     printf ("\t5 - Faca una doacao ao desenvolvedor\n\n");
+    printf ("\t5 - Deixe um comentatio ao Time\n");
     printf("Opção: ");//fim do menu
 
         scanf("%d" , &opcao );// escolha do usuario
@@ -154,6 +155,10 @@ int main ()
         return 0;
         break;
 
+        case 6:
+        printf("Para informacoes duvidas e sugestoes, acesse intagram,com/garotojoao vlw!\n");
+        return 0;
+        break;
 
         default:
         printf("Essa opcão não está Disponivel\n\n");
