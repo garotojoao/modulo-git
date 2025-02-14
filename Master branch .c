@@ -112,21 +112,31 @@ int main ()
 {
 
     int opcao=0;//Definindo variaveis
+    int laco=1;
+    char senhadigitada[]="a";
+	int comparacao;
 
-    int looping=1;
-    for(looping=1;looping==1;)//repeticao looping
+    printf("### Cart�rio da EBAC ###\n\n");
+	printf("Login de adminstrador!\n\nDigite a sua senha: ");
+	scanf("%s",senhadigitada);
+
+    comparacao = strcmp(senhadigitada, "admin");
+	
+	if(comparacao == 0)
+
+    for(laco=1;laco==1;)//repeticao looping
     {
-    system("clear");
-    setlocale (LC_ALL, "Portuguese"); //Lingua que Estamos usando no Code
-    printf ("*_* Cartório da EBAC *_*\n\n");//inicio do menu
-    printf ("Escolha a opção desejada do menu\n\n");
-    printf ("\t1 - Registrar Nomes\n");
-    printf ("\t2 - Consultar Nomes\n");
-    printf ("\t3 - Deletar Nomes\n\n");
-    printf ("\t4 - sair do sistema\n\n");
-    printf ("\t5 - Faca una doacao ao desenvolvedor\n\n");
-    printf ("\t6 - Deixe um comentatio ao Time\n");
-    printf("Opção: ");//fim do menu
+        system("clear");
+        setlocale (LC_ALL, "Portuguese"); //Lingua que Estamos usando no Code
+        printf ("*_* Cartório da EBAC *_*\n\n");//inicio do menu
+        printf ("Escolha a opção desejada do menu\n\n");
+        printf ("\t1 - Registrar Nomes\n");
+        printf ("\t2 - Consultar Nomes\n");
+        printf ("\t3 - Deletar Nomes\n\n");
+        printf ("\t4 - sair do sistema\n\n");
+        printf ("\t5 - Faca una doacao ao desenvolvedor\n\n");
+        printf ("\t6 - Deixe um comentatio ao Time\n");
+        printf("Opção: ");//fim do menu
 
         scanf("%d" , &opcao );// escolha do usuario
         system("clear");
