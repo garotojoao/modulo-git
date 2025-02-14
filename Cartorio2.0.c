@@ -12,7 +12,7 @@ int registro ()
     char sobrenome[40];
     char cargo[40];
 
-    printf("Digite o CPF a ser cadastrado no espaco em branco a seguir: ");
+    printf("Digite o CPF a ser cadastrado no espaco a seguir: ");
     scanf("%s", cpf);
 
     strcpy(arquivo, cpf); //responsavel por copiar os valores da string
@@ -125,7 +125,7 @@ int main ()
     printf ("\t3 - Deletar Nomes\n\n");
     printf ("\t4 - sair do sistema\n\n");
     printf ("\t5 - Faca una doacao ao desenvolvedor\n\n");
-    printf ("\t5 - Deixe um comentatio ao Time\n");
+    printf ("\t6 - Deixe um comentatio ao Time\n");
     printf("Opção: ");//fim do menu
 
         scanf("%d" , &opcao );// escolha do usuario
@@ -153,17 +153,17 @@ int main ()
         case 5:
         printf("Obrigado, minha chave pix é 4002-8922 !\n");
         return 0;
-        break;
+        system("read");
 
         case 6:
         printf("Para informacoes duvidas e sugestoes, acesse intagram,com/garotojoao vlw!\n");
         return 0;
-        break;
+        system("read");
 
         default:
         printf("Essa opcão não está Disponivel\n\n");
         system("read");
         }
 
-     }
+    }
 }
